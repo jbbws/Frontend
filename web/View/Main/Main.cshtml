@@ -1,0 +1,74 @@
+@{
+    Layout = null;
+}
+<html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Economic</title>
+    <link href="~/lib/ext/resources/eco-all.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="~/lib/ext/resources/ext-all-debug.js"></script>
+    <script src="~/lib/ext/eco-debug.js"></script>
+    <script src="~/js/bundle.js"></script>
+    <body>
+       <script>
+           Ext.application({
+            name: 'HelloExt',
+                launch: function() {
+                    Ext.create('Ext.container.Viewport', {
+                        layout: 'fit',
+                        items: [
+                        {
+                            xtype:'economic-menu-panel'
+                            /*
+                            xtype:'panel',
+                            title:'Экономический анализ',
+                            layout:'border',
+                            bodyPadding: 2,
+                            items:[{
+                                title:'Меню',
+                                margin: '5 0 0 5',
+                                border:true,
+                                width: 200,
+                                bodyPadding:0,
+                                xtype:'panel',
+                                layout:'vbox', 
+                                collapsible:true,
+                                region:'west',
+                                items:[{
+                                    xtype:'eco-nav-button',
+                                    text:'Экспресс-анализ',
+                                    width:'100%',
+                                    mainCfg:{
+                                        title:'Экспресс-анализ',
+                                        itemType: 'panel',
+                                        pageId:'express'
+                                    },
+                                    windowtype:'panel'
+                                },{
+                                    xtype:'eco-nav-button',
+                                    text:'Анализ деловой активности',
+                                    windowtype:'panel',
+                                    mainCfg:{
+                                        title:'Анализ деловой активности',
+                                        itemType: 'panel',
+                                        pageId:'buisness'
+                                    },
+                                    width:'100%'
+                                }]
+                            },{
+                                region: 'center',     // center region is required, no width/height specified
+                                xtype: 'tabpanel',
+                                id:'maintabpanel',
+                                //plain: true,
+                                border:true,
+                                layout: 'fit',
+                                margin: '5 5 0 0',
+                                items:[]
+                            }]*/
+                        }]
+                    });
+                }
+            });
+       </script>
+    </body>
+</html>
